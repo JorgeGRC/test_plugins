@@ -1,0 +1,41 @@
+<!--
+  Generated template for the SqlitePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>SQLite</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<section id="overwrite">
+  <form #f="ngForm" (submit)="overwriteData(persistedData)">
+    <ion-list>
+      <ion-item>
+        <ion-label for="savedData">Valor a guardar SQLite:</ion-label>
+        <ion-input id="savedData" name="data" type="text" [(ngModel)]="persistedData" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button block [disabled]="!f.form.valid">Sobreescribir</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</section>
+
+<section id="display" *ngIf="isDataAvailable" style="margin-top:50px;">
+  <ion-card>
+    <ion-card-header>
+      Valor guardado
+    </ion-card-header>
+    <ion-card-content>
+      {{persistedData}}
+    </ion-card-content>
+  </ion-card>
+</section>
+</ion-content>

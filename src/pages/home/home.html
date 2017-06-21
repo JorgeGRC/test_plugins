@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Viabilidad tecnológica
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <ion-list>
+   <ion-list-header><strong>Categorías</strong></ion-list-header>
+     <button ion-item (click)="goToLocalStorage()">Local Storage</button>
+     <button ion-item (click)="goToSqlStorage()">SQLite Storage</button>
+     <button ion-item (click)="goToLocalNotif()">Local notifications</button>
+     <button ion-item (click)="goToDeviceInfo()">Info. dispositivo</button>
+     <button ion-item (click)="goToSocialSharing()">Social Sharing</button>
+     <button ion-item (click)="goToHttp()">HTTP</button>
+     <button ion-item (click)="goToPush()">Push</button>
+   
+ </ion-list>
+</ion-content>

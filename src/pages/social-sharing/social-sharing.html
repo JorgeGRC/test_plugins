@@ -1,0 +1,37 @@
+<!--
+  Generated template for the SocialSharingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Social sharing</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p>Pincha en alguno de los botones de aquí abajo para compartir una publicación genérica en alguna de las plataformas</p>
+  <p><button ion-button block (click)="generalShare()">Compartir</button></p>
+  <ion-card>
+    <ion-card-header><strong>Vía email</strong></ion-card-header>
+    <ion-card-content>
+      <ion-input type="email" placeholder="Email destinatario" #target></ion-input>
+    </ion-card-content>
+      <p><button ion-button block (click)="emailShare(target.value)">Compartir via email</button></p>
+  </ion-card>
+  <ion-row text-center>
+    <ion-col col-4>
+      <button ion-button large icon-only clear (click)="facebookShare()"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button large icon-only clear (click)="twitterShare()"><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-col>
+    <ion-col col-4>
+      <button ion-button large icon-only clear (click)="whatsappShare()"><ion-icon name="logo-whatsapp"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+</ion-content>
