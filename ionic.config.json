@@ -1,5 +1,5 @@
 {
   "name": "test_plugins",
-  "app_id": "",
+  "app_id": "com.adnmobilesolutions.testingapp",
   "type": "ionic-angular"
 }
