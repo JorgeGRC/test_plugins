@@ -11,11 +11,13 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push';
  */
 
 const options: PushOptions = {
-   android: {
+  // android: {
       // El sender ID lo da la consola de Firebase
-       senderID: '423946364857'
-   },
+       //senderID: '423946364857'
+  // },
    ios: {
+  // Ojo que en la ayuda del plugin, no sale el campo senderID para IOS y es necesario en caso de usar FCM
+       //senderID: '423946364857',
        alert: 'true',
        badge: true,
        sound: 'false'

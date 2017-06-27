@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "423946364857",
+    "firebase_url": "https://pushtest-171308.firebaseio.com",
+    "project_id": "pushtest-171308",
+    "storage_bucket": "pushtest-171308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423946364857:android:87151830c3e20bb2",
+        "android_client_info": {
+          "package_name": "test.adn.cordova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423946364857-hn2719temtee565am3oksrugk8t564o8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUP3M2IWXra652-NkubnT4J0h19kLAA0w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
